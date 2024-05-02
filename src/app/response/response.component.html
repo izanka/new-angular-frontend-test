@@ -1,0 +1,7 @@
+<div>
+    <input type="text" #name placeholder="Enter your name">
+    <button (click)="processData(name.value)">Submit</button>
+  </div>
+  <div *ngIf="response">
+    <p>{{ response }}</p>
+  </div>
